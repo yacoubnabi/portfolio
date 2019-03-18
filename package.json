@@ -1,0 +1,11 @@
+{
+  "name": "portfolio",
+  "vapid": {
+  },
+  "scripts": {
+    "start": "vapid start ."
+  },
+  "dependencies": {
+    "@vapid/cli": "^0.7.6"
+  }
+}
