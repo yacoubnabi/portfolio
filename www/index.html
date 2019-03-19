@@ -1,18 +1,10 @@
 {{> header}}
-    <div>
-            <ul>
-                
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-    </div>
     <main>
       <!--die projekte in form von bildern dargestellt die wie ordner funktionieren-->
-        <div>
                 {{#section projects multiple=true}}
                 <a href="{{_permalink}}">
                     {{image type=image width=950 alt="Example 1"}}
                 </a>
                 {{/section}}
-        </div>
     </main>
 {{> footer}}
