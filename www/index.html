@@ -1,44 +1,18 @@
-<!DOCTYPE html>
-<html>  
-<head>
-    <title>Jacoub Nabi</title>
-    <meta charset="utf-8">
-</head>
-<body>
-    <header>
-        <a href="https://google.com"><img src="images/logo.png"></a>  
-        <a>Jacoub Nabi</a>      
-    </header>
+{{> header}}
     <div>
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                
+                <li><a href="/contact">Contact</a></li>
             </ul>
     </div>
     <main>
       <!--die projekte in form von bildern dargestellt die wie ordner funktionieren-->
         <div>
-            <a href="/projekt1">
-                <img src="images/bild1x.png">
-                <h2>Projekt1</h2>
-            </a>
-            <a href="/projekt2">
-                <img src="images/bild2x.png">
-                <h2>Projekt2</h2>
-            </a>
-            <a href="/projekt3"></a>
-                <img src="images/bild3x.png">
-                <h2>Projekt3</h2>
-            </a>
-            <a href="/projekt4">
-                <img src="images/bild4x.png">
-                <h2>Projekt4</h2>
-            </a>
-            <a href="/projekt5">
-                <img src="images/bild5x.png">
-                <h2>Projekt5</h2>
-            </a>
+                {{#section projects multiple=true}}
+                <a href="{{_permalink}}">
+                    {{image type=image width=950 alt="Example 1"}}
+                </a>
+                {{/section}}
         </div>
     </main>
-</body>
-</html>
+{{> footer}}
