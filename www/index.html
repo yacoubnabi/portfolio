@@ -1,10 +1,12 @@
 {{> header}}
     <main>
+        <div class="page">
       <!--die projekte in form von bildern dargestellt die wie ordner funktionieren-->
                 {{#section projects multiple=true}}
                 <a href="{{_permalink}}">
                     {{image type=image width=950 alt="Example 1"}}
                 </a>
                 {{/section}}
+        </div>
     </main>
 {{> footer}}

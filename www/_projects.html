@@ -1,12 +1,37 @@
 {{> header}}
 <main class="projekt">
+        <div class="page">
         {{#section projects}}
-        <h1>{{title}}</h1>
-        {{image type=image width=800 alt="Example 1"}}
         
-        {{description type=html}}
+        <h1>{{title}}</h1>
+
+        {{#if description}}
+                {{description type=html editor=markdown required=false}}
+        {{/if}}
+
+        {{#if description2}}
+                {{description2 type=html required=false}}
+
+                {{#if image2}}
+                        {{image2 type=image width=800 alt="Example 1" required=false}}
+                {{/if}}
+                {{#if image3}}
+                        {{image3 type=image width=800 alt="Example 1" required=false}}
+                {{/if}}
+                {{#if image4}}
+                        {{image4 type=image width=800 alt="Example 1" required=false}}
+                {{/if}}
+                {{#if image5}}
+                        {{image5 type=image width=800 alt="Example 1" required=false}}
+                {{/if}}
+                {{#if image6}}
+                        {{image6 type=image width=800 alt="Example 1" required=false}}
+                {{/if}}
+
+        {{/if}}
+        </div>
         {{/section}}
 
 </main>
-</body>
-</html>
+
+{{> footer}}
