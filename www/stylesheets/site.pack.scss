@@ -66,14 +66,30 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center; 
 
   img {
-    width: 150px;
+    width: 130px;
+  }
+
+  .lampentext {
+    text-align: justify
   }
 }
 
-.logotext{
+.logotext {
   text-align: justify;
   margin: auto;
   width: 60%;
+}
+
+.social {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  
+  a {
+    margin: 0 20px;
+    display: block;
+  }
 }

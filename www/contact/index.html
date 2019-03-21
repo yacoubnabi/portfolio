@@ -1,9 +1,18 @@
 {{> header}}
 
 <main>
-    {{#section contact}}
-        {{text type=html}}
-        {{image type=image width=300 alt="Example 1"}}
-    {{/section}}
+       
+                <div class="social">
+                        {{#section social multiple=true}}
+    
+                        <a target="_blank" href="{{Link type=link}}">
+                            {{Icon type=image width=24 height=24}}
+                        </a>
+                    {{/section}}
+                    
+                </div>
+       
+
+   
 </main>
 
